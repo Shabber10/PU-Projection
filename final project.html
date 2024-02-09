@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Agency Name</title>
+    <link rel="stylesheet" href="final project.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+@import url(https://fonts.googleapis.com/css?family=Cuprum:400,700);
+.bestnavbar {
+  color: #fff;
+  font-size: 20px;
+  font-family: Titillium Web!important;
+  background-image:linear-gradient(to right,rgb(215, 9, 201),rgb(21, 141, 174),rgb(117, 203, 25));
+  width: 100%;
+  height: 83px;
+  position: fixed;
+  margin-top: -30px;
+}
+
+.bestnavbar ul {
+  margin: -1px;
+  padding: 0;
+  margin-left: 5px;
+  
+}
+
+.bestnavbar li i {
+  position: absolute;
+  margin-left: -35px;
+  margin-top: 6px;
+  color: #444349;
+  text-shadow: 0 1px 0 #212121;
+}
+
+.bestnavbar li {
+  float: left;
+  display: block;
+  padding: 20px 10px 23px 50px;
+  cursor: pointer;
+  min-width: 100px;
+  max-width: 100px;
+  
+}
+
+.bestnavbar li:hover {
+  background-image:linear-gradient(to right,rgb(215, 105, 9),rgb(156, 174, 21),rgb(117, 203, 25));
+}
+
+.bestnavbar li:hover i {
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
+  
+}
+
+.bestnavbar li main {
+  font-weight: 700;
+  margin-top: -18px;
+}
+
+.bestnavbar li desc {
+  position: relative;
+  float: left;
+  font-size: 11px;
+  color: white;
+}
+
+.bestnavbar li,
+.bestnavbar li i,
+.bestnavbar li main,
+.bestnavbar li desc {
+  -moz-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+}
+
+.bestnavbar li:hover main {
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+.bestnavbar li:hover desc {
+  margin-left: 30px;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}  
+.logo{
+  text-align: center;
+  margin-top: -10px;
+}
+.logo desc{
+  margin-left: 300px;
+}
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for sections */
+section {
+    padding: 50px;
+}
+
+.hero {
+    background-image: url("bgimg3.jpg");
+    color: #fff;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about, .our-work, .testimonials, .faq {
+    background-color: #f9f9f9;
+}
+.hero{
+  height: 670px;
+  margin-top: 30px;
+}
+.tit{
+  font-size: 150px;
+  text-align: center;
+  color: #9a57c9;
+  text-shadow: 6px 6px #000;
+}
+.sub-tit{
+  margin-top: 15px;
+  font-size: 32px;
+}
+
+
+
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .member {
+    text-align: center;
+    margin: 1em;
+  }
+  
+  .member img {
+    border-radius: 50%;
+    max-width: 100px;
+  }
+  
+  /* Footer styling */
+  footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Icons styling */
+  .icons a {
+    color: #333;
+    font-size: 1.5em;
+    margin: 0 0.5em;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+    }
+    nav a {
+      margin: 0.5em 0;
+    }
+  }
+/* Team member hover effect */
+.member:hover {
+    transform: scale(1.05); /* Enlarge the image and details */
+    box-shadow: 0px 4px 8px rgba(8, 8, 8, 0.1); /* Add a subtle shadow */
+  }
+  
+  /* Team member image transition */
+  .member img {
+    border-radius: 50%;
+    max-width: 100px;
+    transition: transform 0.3s ease-in-out; /* Apply transition on hover */
+  }
+  .member:hover img {
+    transform: scale(1.1); /* Enlarge the image on hover */
+  }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2rem;
+        background-image: url("bgimg4.jpg");
+        color: #f4f4f4;
+        
+        
+      }
+      
+      #projects article {
+        background-color: var(--project-box-color);
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        width: 100%;
+        max-width: 500px;
+        transition: transform 0.3s ease-in-out;
+        background-image: linear-gradient(to right,#bd28ae,#e61782);
+        margin-bottom: 20px;
+        
+      }
+      
+      #projects article:hover {
+        transform: translateY(-10px);
+      }
+      
+      #projects a {
+        display: inline-block;
+        background-color: #444;
+        color: #f4f4f4;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+      }
+      
+      #projects a:hover {
+        background-color: #555;
+      }
+      .ou{
+        font-size: 100px;
+        font-weight: bold;
+        text-decoration : linear-gradient(to right,#22a0a0,#24e85b,#bac521);
+      }
+      
+.about{
+  background-image: url("bgimg5.jpg");
+  font-size: 20px;
+  color:white;
+}
+
+.about h2{
+  font-size: 100px;
+}
+.team{
+  color: linear-gradient(to right,#2426cd,#2872d3aa,#1db6cd);
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+  display: flex;
+}
+
+.footerLeft {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.fMenuTitle {
+  font-size: 16px;
+}
+
+.fList {
+  padding: 0;
+  list-style: none;
+}
+
+.fListItem {
+  margin-bottom: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.footerRight {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fInput {
+  padding: 5px;
+}
+
+.fButton {
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+.fIcons{
+  display: flex;
+}
+
+.fIcon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.copyright{
+  font-weight: 300;
+  font-size: 14px;
+}
+
+
+  footer{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerLeft{
+    padding: 20px;
+    width: 90%;
+  }
+
+  .footerRight{
+    padding: 20px;
+    width: 90%;
+    align-items: center;
+    background-color: whitesmoke;
+  }
+
+</style>
+</head>
+<body>
+  
+  <div class="bestnavbar">
+    <ul>
+      <li><i class="icon-home icon-large" href="#hero" id="active"></i>&nbsp;<main>Home</main><desc>Ir al Inicio</desc></li>
+      <li><i class="icon-user icon-large" href="#about"></i>&nbsp;<main>About Us</main><desc>Edita tu perfil</desc></li>
+      <li><i class="fa fa-gears" style="font-size:20px" href="#projects"></i>&nbsp;<main>Our work</main><desc>Edita tu perfil</desc></li>
+      <li><i class="fa fa-thermometer" style="font-size:25px" href="#testimonials"></i>&nbsp;<main>Testimonials</main><desc>Testimonials</desc></li>
+      <li><i class="icon-envelope icon-large" href="#faq"></i>&nbsp;<main>FAQ's</main><desc>FAQ's</desc></li>
+    </ul>
+    <div class="logo">&nbsp;<main><h1 class="logo">Company Logo</h1></main><desc>Company Name</desc>
+    </div>
+  </div>
+
+  
+  
+  
+  <div>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="tit">Company Name</div>
+            <div class="sub-tit">Tagline: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas venenatis nulla eget erat tempus cursus.</div>
+            <p>Brief introduction to services and expertise.</p>
+            <a href="#" class="cta-button">Book Appointment</a>
+            <a href="Our work" class="cta-button">View Work</a>
+        </div>
+    </section>
+
+    
+    <section class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Overview of the agency's background, mission, and values.</p>
+            <section id ="team">
+              <h1>Meet the Team</h1>
+              <p>
+                  Our team is comprised of cybersecurity experts with a passion for developing innovative solutions to help users protect their digital assets. We are committed to creating cutting-edge tools and resources that empower users to stay ahead of the ever-evolving cybersecurity landscape.
+              </p>
+              <div class="team">
+                  <div class="member">
+                  <img src="img1.jpg" alt="Member 1">
+                  <h3>kasinadhsarma</h3>
+                  <h4>Creator</h4>
+                  <p>Software creator<br>Cyber Security Specilist<br>Researcher</p>
+                  </div>
+                  <div class="member">
+                    <img src="img2.jpg" alt="Member 2">
+                    <h3>Saicharan</h3>
+                    <h4>Maintainer</h4>
+                    <p>Os Core-Devloper <br>OS Specilist <br>Developer</p>
+                  </div>
+                  <div class="member">
+                  <img src="img3.jpg" alt="Member 3">
+                  <h3>PavanGopi</h3>
+                  <h4>Team-member</h4>
+                  <p>ui-ux Desinger</p>
+                  </div>
+      
+          </section>
+        </div>
+    </section>
+
+
+    <section id="projects">
+      <div><label class="ou">Our work</label> 
+      
+          <article class="first">
+            <h3>Penetration App:</h3>
+            <p>
+                As the digital realm continues to expand, the realm of cybersecurity must evolve in tandem. Understanding the need for advanced training and resource accessibility, we introduced the "Penetration App", the first version in our cybersecurity training evolution, paving the path for our broader vision: "Cyber City".
+            </p>
+            
+            <h4>Features of the Penetration App:</h4>
+            <p>
+                The Penetration App was conceived as a comprehensive cybersecurity toolkit tailored for both newcomers and seasoned professionals. With a user-centric interface, this app converges a myriad of tools and resources, covering areas such as encryption, web/software security, and even training platforms.
+            </p>
+          </article>
+          <article class="second">
+           <h3>Deep Action Experimental: Pioneering the Path for Pikasu Bird AI</h3>
+            <p>
+              In an era where artificial intelligence and deep learning continue to shatter boundaries, the "Deep Action Experimental" project emerges as a foundational endeavor leading to the next-gen capabilities of "Pikasu Bird AI". Primarily designed to explore the realms of object detection using advanced deep learning techniques, this project serves as a primer, setting the stage for even more innovative pursuits in computer vision.
+            </p>
+          
+            <p>
+              "Deep Action Experimental" offers a user-centric experience, incorporating a graphic interface built atop the Gtk library in Python. This intuitive platform allows users to delve deep into the world of object detection, exploiting a robust Faster R-CNN model. Its modules, namely Home, Image Capture, Live Capture, and Video Capture, facilitate diverse object detection mechanisms, spanning from static images to dynamic video content.
+            </p>
+          </article>
+          <article id="piksu-bird-ai-brief" class="third">
+            <h2>UpComing Piksu Bird AI</h2>
+            <p>
+             Witness the future of bacterial detection with Piksu Bird AI, a harmonious blend of technology and nature. This innovative system leverages cutting-edge software and hardware to accurately detect and analyze bacterial threats in diverse environments. With capabilities ranging from microscopic visualization to adaptive learning, Piksu Bird AI is poised to redefine detection methodologies, offering solutions across healthcare, agriculture, and beyond. Join us in heralding a new era of safety and precision.
+            </p>
+          </article>
+          <article id="advanced-ai-os" class="fourth">
+           <h2>UpComing Advanced AI OS</h2>
+            <p>
+              Step into the future with the Advanced AI OS, a beacon of next-generation computing. This groundbreaking operating system is designed from the ground up to harness the power of artificial intelligence. With capabilities that adapt, learn, and evolve, Advanced AI OS offers a user experience that's both intuitive and transformative. Whether you're a professional pushing the boundaries or an everyday user seeking seamless operations, our AI OS is designed for you. Dive deep into a new realm of efficiency, creativity, and intelligence.
+            </p>
+  
+           <h3>Software Features of Advanced AI OS:</h3>
+          </article>
+      </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="testimonials-content">
+            <h2>Testimonials</h2>
+        </div>
+    </section>
+
+
+    <section class="faq">
+        <div class="faq-content">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+    </section>
+  </div>
+
+
+
+
+    <footer>
+      <div class="footerLeft">
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">About Us</h1>
+            <ul class="fList">
+                <li class="fListItem">Company</li>
+                <li class="fListItem">Contact</li>
+                <li class="fListItem">Careers</li>
+                <li class="fListItem">Affiliates</li>
+                <li class="fListItem">Stores</li>
+            </ul>
+        </div>
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">Useful Links</h1>
+            <ul class="fList">
+                <li class="fListItem">Support</li>
+                <li class="fListItem">Refund</li>
+                <li class="fListItem">FAQ</li>
+                <li class="fListItem">Feedback</li>
+                <li class="fListItem">Stories</li>
+            </ul>
+        </div>
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">Products</h1>
+            <ul class="fList">
+                <li class="fListItem">Air Force</li>
+                <li class="fListItem">Air Jordan</li>
+                <li class="fListItem">Blazer</li>
+                <li class="fListItem">Crater</li>
+                <li class="fListItem">Hippie</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerRight">
+        <div class="footerRightMenu">
+            <h1 class="fMenuTitle">Subscribe to our Company</h1>
+            <div class="fMail">
+                <input type="text" placeholder="your@email.com" class="fInput">
+                <button class="fButton">Join!</button>
+            </div>
+        </div>
+        <div class="footerRightMenu">
+            <h1 class="fMenuTitle">Follow Us</h1>
+            <div class="fIcons">
+                <img src="./img/facebook.png" alt="" class="fIcon">
+                <img src="./img/twitter.png" alt="" class="fIcon">
+                <img src="./img/instagram.png" alt="" class="fIcon">
+                <img src="./img/whatsapp.png" alt="" class="fIcon">
+            </div>
+        </div>
+        <div class="footerRightMenu">
+            <span class="copyright">&copy @Shabber. All rights reserved. 2023.</span>
+        </div>
+    </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
